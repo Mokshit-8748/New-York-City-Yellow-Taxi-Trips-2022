@@ -1,81 +1,82 @@
-# NYC Yellow Taxi Trips 2022 – Tableau Dashboard
-
-This repository contains a comprehensive Tableau dashboard analyzing the New York City Yellow Taxi trip data for 2022, as well as the datasets, SQL queries, and essential source files used in the project.
+# Case Study: NYC Yellow Taxi Trips 2022 – Data-Driven Insights & Dashboard
 
 ## Overview
 
-This project provides actionable insights into NYC’s yellow taxi ecosystem for 2022. By leveraging detailed trip data, we identify passenger trends, payment methods, tipping behavior, and key performance indicators. Visualizations and datasets are designed for urban mobility stakeholders such as city planners and transportation policymakers.
+This repository presents a comprehensive case study analyzing New York City’s Yellow Taxi Trips data for the year 2022. Leveraging an interactive dashboard and detailed datasets, the project uncovers key trends in rider behavior, payment methods, fare structures, and tipping practices to inform urban mobility decisions.
 
-## Repository Contents
+Our analysis aims to support city planners, transportation policymakers, taxi operators, and related stakeholders in understanding patterns that can drive better fleet management, policy formation, and customer service improvements.
 
-- **/data/**
-  - `Unified_dataset.csv` – Summary KPIs by passenger bucket (trips, fares, tips).
-  - `detailed-dataset.csv`– Full trip segmentation (by hour, payment, tipping bucket, etc.).
-  - `top-10-trips.csv`– Top 10 longest trip records with all features.
-- **/assets/**
-  - `dashboard_snapshot.jpg`-<img width="1590" height="795" alt="Screenshot 2025-08-03 214134" src="https://github.com/user-attachments/assets/982b6def-19ec-413a-aba9-b8d8626b4946" />
+## Dashboard Snapshot
 
-- **/tableau/**
-  - `NYC_Yellow_Taxi_2022.twb` – Tableau workbook file with all visualizations.
-- **/queries/**
-  - `unified_dataset_query.sql` – SQL used for KPIs.
-  - `detailed_dataset_query.sql` – SQL for breakdowns (segmentation; time, payment, tip).
-  - `top_10_trips_query.sql` – SQL for longest trip analysis.
+![NYC Yellow Taxi Trips 2022 Dashboard](assets/dashboard_snapshot.png)
 
-## How to Use
+The dashboard offers a professional overview of key metrics such as total trips, total revenue, tip amounts, passenger counts, payment methods, temporal trends, and the longest trips.
 
-1. **Explore the Dashboard**  
-   Open the `.twb` file in Tableau Desktop or Tableau Public. You’ll find dashboard covering multiple KPIs, passenger and trip segmentation, payment methods, tipping analysis, and top trips.
+## Key Takeaways: Questions & Answers
 
-2. **Review & Reproduce Analyses**  
-   - Each chart/metric is powered by the included CSV datasets.  
-   - To ensure transparency, all SQL queries used to extract and shape these datasets are provided in `/queries/`.  
-   - Data source slides and visual footnotes in the dashboard indicate which dataset/query powers each analytic section.
+**Q1: Who are the majority of NYC yellow taxi riders—solo, pairs, or groups?**  
+**A:** Solo riders (single-passenger trips) make up the vast majority of all rides and revenue, indicating that most taxi journeys in NYC are by individuals.
 
-3. **Dashboard Features**  
-   - **Core KPIs**: Aggregated by passenger bucket.  
-   - **Segmentation by hour and payment**: Detailed breakdowns for trip distribution and fare/tip analysis.  
-   - **Tipping Patterns**: Distribution across defined percentage buckets.  
-   - **Top 10 Trips**: Outlier and long-distance trip inspection.
+**Q2: What is the dominant payment method for taxi fares?**  
+**A:** Credit cards are by far the most popular payment method, signifying a highly digital, cashless customer base.
 
-## Key Insights & Takeaways
+**Q3: How do NYC riders typically tip their drivers?**  
+**A:** Most riders tip in the lowest bracket (0–5%), while only a small percentage give tips above 20%, showing that high tipping is relatively rare.
 
-- **Solo riding is dominant**: Single-passenger trips account for most rides and revenue.  
-- **Credit cards rule**: The vast majority of fares are paid with cards, especially for higher-value and higher-tip rides.  
-- **Tips skew low**: Most tips fall into the 0–5% range, with only a small subset exceeding 20%.  
-- **Peak travel hours**: Demand is highest during evening rush (5–8 PM); early morning hours are lowest.  
-- **Long trips are rare, but impactful**: Most rides are short or moderate; the top 10 longest trips are significant outliers and contribute disproportionately to revenue.  
-- **Segmented insights**: Both fare and tipping percentages are higher for solo and two-passenger trips compared to larger groups.
+**Q4: When does yellow taxi demand peak in NYC?**  
+**A:** Demand spikes during the evening rush hours (5–8 PM), suggesting optimal periods for fleet deployment and pricing strategies.
 
-## Prerequisites
+**Q5: Are most taxi rides long, short, or somewhere in between?**  
+**A:** Nearly all rides are short to moderate in distance; very long trips are rare but have a significant revenue impact.
 
-- [Tableau Desktop](https://www.tableau.com/products/desktop) or [Tableau Public](https://public.tableau.com/)  
-- BigQuery or another SQL platform for custom data extraction
+**Q6: Does the number of passengers per trip influence fare and tipping behavior?**  
+**A:** Yes—one and two-passenger rides tend to have higher average fares and tipping percentages than larger groups, who pay and tip less per person.
 
-## Recreating / Extending the Analysis
-
-1. **SQL Extraction:** Use the provided queries in `/queries/` to re-extract the most recent data from BigQuery or your data warehouse.  
-2. **Data Update:** Replace or append to the CSVs in `/data/` as needed.  
-3. **Dashboard Customization:** Open the Tableau workbook and refresh data sources or customize visuals.
-
-## Attribution
-
-- Data source: NYC TLC Yellow Taxi Trips (BigQuery Public Dataset)  
-- Dashboard and analysis by: Mokshit-8748
-
-## License
-
-This project is licensed under the MIT License.
-
-
-## Acknowledgements
-
-- NYC Taxi & Limousine Commission – original data provider.  
-- Tableau Public and community support for dashboard best practices.
+**Q7: What improvement opportunities does the dashboard reveal for the taxi system?**  
+**A:** The findings highlight opportunities such as dynamic pricing during peak times, better targeting of digital payment promotion, education for tipping, and optimizing fleet allocation to solo travelers.
 
 ---
 
-**Questions or feedback?**  
-Your feedback is always welcome! Please open an issue or reach out to the maintainer with any questions or suggestions.
+You can use this format in your README.md or case study to frame insights as easily digestible, actionable points for any audience. If you'd like these tailored even further (for a specific audience or report style), just ask!
 
-> *For maximum transparency, this repository includes raw data, all transformation queries, and the exact dashboard snapshot as used in analysis. You are encouraged to fork, adapt, or extend with your own NYC taxi data explorations!*
+
+## Impact & Recommendations
+
+Based on these insights, the following actions can enhance NYC taxi operations:
+
+- Implement **Dynamic Pricing Strategies** aligned with peak demand hours.
+- Optimize **Fleet Deployment** to match temporal ridership patterns.
+- Promote **Digital Payment Methods** for efficiency and convenience.
+- Encourage **Tipping Practices** via education or POS default tip options.
+- Focus on **Customer Experience** improvements tailored to passenger segments.
+
+## Repository Contents
+
+- **Tableau Dashboard** – Interactive visualization workbook and dashboard snapshot image.  
+- **Datasets** – Aggregated and detailed CSV files representing the analyzed data.  
+- **SQL Queries** – Scripts used for data extraction and transformation.  
+- **Documentation** – This case study README containing context, insights, and FAQs.
+
+## Data Notes
+
+- Source: NYC Taxi & Limousine Commission’s publicly available 2022 Yellow Taxi datasets via BigQuery.  
+- Trip distances in datasets are in **meters** but converted to **miles** (1 meter = 0.00062137 miles) for the dashboard and analysis.
+
+---
+
+
+## License
+
+This project is licensed under the MIT License. 
+
+---
+
+## Questions or Feedback
+
+We always welcome your feedback, questions, and suggestions!  
+Please open an issue or contact the repository maintainer at any time.  
+Your input helps us improve and expand this project.
+
+---
+
+*Thank you for exploring this data-driven case study on NYC Yellow Taxi Trips 2022 — enabling smarter transportation decisions through analytics!*
