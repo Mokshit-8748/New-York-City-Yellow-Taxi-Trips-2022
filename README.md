@@ -8,7 +8,9 @@ Our analysis aims to support city planners, transportation policymakers, taxi op
 
 ## Dashboard Snapshot
 
-![NYC Yellow Taxi Trips 2022 Dashboard](assets/dashboard_snapshot.png)
+[NYC Yellow Taxi Trips 2022 Dashboard]
+<img width="1590" height="795" alt="Screenshot 2025-08-03 214134" src="https://github.com/user-attachments/assets/a91df6f4-0ca6-4ad3-ae70-5ffc3ee1e9c7" />
+
 
 The dashboard offers a professional overview of key metrics such as total trips, total revenue, tip amounts, passenger counts, payment methods, temporal trends, and the longest trips.
 
