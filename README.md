@@ -23,7 +23,7 @@ The dashboard offers a professional overview of key metrics such as total trips,
 **A:** Credit cards are by far the most popular payment method, signifying a highly digital, cashless customer base.
 
 **Q3: How do NYC riders typically tip their drivers?**  
-**A:** Most riders tip in the lowest bracket (0–5%), while only a small percentage give tips above 20%, showing that high tipping is relatively rare.
+**A:** Most riders tip in the highest bracket (20%+), while only a small percentage give tips below 5%, showing that high tipping is not that rare.
 
 **Q4: When does yellow taxi demand peak in NYC?**  
 **A:** Demand spikes during the evening rush hours (5–8 PM), suggesting optimal periods for fleet deployment and pricing strategies.
